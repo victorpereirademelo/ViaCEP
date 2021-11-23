@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+div{
+    display: block;
+}
+
+div#logo{
+    background-color: green;
+    margin: 0;
+    padding: 1em 1em 1em 3em;
+}
+
+div#barra{
+    background-color: #fafa0f;
+    height: 5px;
+}
+
+section.container{
+    max-width: 640px;
+    margin: 50px auto;
+    background:green;
+    border: 3px solid #fafa0f;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label{
+    color: white;
+}
+
+form input, form label, form button{
+    display: block;
+    width:  100%;
+    margin-bottom: 10px;
+}
+
+form input{
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+form input:focus{
+    outline: 1px solid white;
+}
