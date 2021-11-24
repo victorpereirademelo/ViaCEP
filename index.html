@@ -18,11 +18,9 @@
         <p style="color: white;">Digite o CEP e ao sair o campo o endereço será completado. Pode utilizar a tecla TAB
             após digitar o CEP.</p>
 
-        <form method="get" action=".">
-
+        <form method="get" action="." id="form">
             <label>Cep:
-                <input type="text" name="cep" id="cep" value="" size="10" maxlength="9"
-                    onblur="pesquisacep(this.value);">
+                <input type="text" name="cep" id="cep" value="" size="10" maxlength="8" onblur="pesquisacep(this.value);">
             </label>
 
             <label>Rua:
@@ -45,6 +43,7 @@
                 <input type="text" name="ibge" id="ibge" size="8">
             </label>
 
+            <button type="submit">Enviar</button>
         </form>
     </section>
 

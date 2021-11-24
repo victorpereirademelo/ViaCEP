@@ -59,3 +59,18 @@ form input{
 form input:focus{
     outline: 1px solid white;
 }
+
+form button{
+    border: none;
+    background: white;
+    color: green;
+    font-size: 19px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+form button:hover{
+    background: rgb(206, 200, 200);
+}
