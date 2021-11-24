@@ -1,5 +1,6 @@
 // Inicio do Programa
 const enderecos = [];
+const ufs = ['PE', 'SP'];
 
 const recebeEventoForm = (evento) => {
     evento.preventDefault();
@@ -11,6 +12,11 @@ const recebeEventoForm = (evento) => {
         uf: document.getElementById('uf').value,
         ibge: document.getElementById('ibge').value
     };
+
+    if (!ufs.includes(endereco.uf)) {
+        alert('UF invalida');
+        return;
+    }
 
     limpa_formulário_cep();
     enderecos.push(endereco);
